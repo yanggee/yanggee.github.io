@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="赵阳">
 <meta property="og:description" content="什么是Hexo？hexo 是一个快速、简洁、高效的博客框架。hexo使用MarkDown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。
 安装安装Hexo相当简单。由于hexo是基于node.js的静态博客框架，这个教程是针对Mac的，window下面配置的原理是一样，各位看官自行探">
-<meta property="og:updated_time" content="2016-09-06T09:50:39.000Z">
+<meta property="og:updated_time" content="2016-09-06T14:32:42.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo+next+github搭建一个个人博客">
 <meta name="twitter:description" content="什么是Hexo？hexo 是一个快速、简洁、高效的博客框架。hexo使用MarkDown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。hexo出自台湾大学生tommy351之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒。
@@ -192,16 +192,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             
@@ -218,16 +208,6 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404.html" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
-            
-            公益404
           </a>
         </li>
       
@@ -336,7 +316,12 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo</div></pre></td></tr></table></figure>
 <p>注意： </p>
 <p>​    安装完成之后，一定要输入 <code>hexo —version</code>检查一下看看是否正确安装 </p>
-<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4>
+<h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>所谓的初始化，就是自己建一个工作目录，然后运行 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init [dir] // dir 是指你自己的工作目录  例如： hexo init blog</div></pre></td></tr></table></figure>
+<p>然后一定不要忘了另外一个命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>这个命令是给hexo 的工作目录下面添加相关的依赖包</p>
+<h4 id="新建一个文件（就是我们自己写的blog）"><a href="#新建一个文件（就是我们自己写的blog）" class="headerlink" title="新建一个文件（就是我们自己写的blog）"></a>新建一个文件（就是我们自己写的blog）</h4>
       
     </div>
 
@@ -495,7 +480,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo？"><span class="nav-number">1.</span> <span class="nav-text">什么是Hexo？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装HomeBrew"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装HomeBrew</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.1.2.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.1.3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">1.1.4.</span> <span class="nav-text">初始化</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Hexo？"><span class="nav-number">1.</span> <span class="nav-text">什么是Hexo？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装HomeBrew"><span class="nav-number">1.1.1.</span> <span class="nav-text">安装HomeBrew</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装node-js"><span class="nav-number">1.1.2.</span> <span class="nav-text">安装node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.1.3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#初始化"><span class="nav-number">1.1.4.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#新建一个文件（就是我们自己写的blog）"><span class="nav-number">1.1.5.</span> <span class="nav-text">新建一个文件（就是我们自己写的blog）</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
